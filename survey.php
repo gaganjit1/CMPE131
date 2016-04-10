@@ -52,7 +52,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) { // receiving "get" data
 if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) { // receiving "post" data 
 	$sjsuid = $_POST["SJSUID"]; // creating variable sjsuid and setting it equal to the "post method" extracted data for the inputted sjsuid from the user
 	$major = $_POST["major"];
-	$major = str_pad($major, 9, "0", STR_PAD_LEFT);
+	$sjsuid = str_pad($sjsuid, 9, "0", STR_PAD_LEFT);
 	
 	$i=1; // declare variable i to incremennt for the question number
 	$list=""; // initizing a string labeled list for mysql field id (question 1,question2) This is the question names being stored)

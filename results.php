@@ -29,10 +29,10 @@ if ($result = $mysqli->query($query)) {
 
     /* fetch associative array */
     $row = $result->fetch_assoc();
-	    echo '<br>';
-		echo '<table color="white" border="1"><tr><td>SJSU ID</td><td>Recommended Major</td></tr>';
+	    echo '<br><div class="container">';
+		echo '<table class="white" border="1"><tr><td>SJSU ID</td><td>Recommended Major</td></tr>';
         echo '<tr><td>'.str_pad($row["SJSU_ID"], 9, "0", STR_PAD_LEFT).'</td><td>'.$row["Rec_Major"].'</td></tr>';
-		echo '</table>';
+		echo '</table></div>';
 
     /* free result set */
     $result->free();

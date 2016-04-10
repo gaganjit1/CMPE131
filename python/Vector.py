@@ -16,12 +16,10 @@ def vectordist(a, b):
 
 def distcheck(a):
     avg = SQL.getavg()
-
-    cmpe = vectordist(a, avg[1])
-    cheme = vectordist(a, avg[2])
-    ee = vectordist(a, avg[3])
-    meche = vectordist(a, avg[4])
-
+    cmpe = vectordist(a, avg[0])
+    cheme = vectordist(a, avg[1])
+    ee = vectordist(a, avg[2])
+    meche = vectordist(a, avg[3])	
     minm = min(cmpe, cheme, ee, meche)
     if  minm == cmpe:
         return "Computer Engineering", "CmpE"
