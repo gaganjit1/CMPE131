@@ -13,7 +13,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) { // receiving "get" data
 $sjsuid = $_GET["sjsuid"];
 $response_id = $_GET["id"];
 
-$shell_resp = shell_exec("C:/Users/andre/PycharmProjects/CMPE131/WebInterface.py ".$response_id);
+$shell_resp = shell_exec("D:/wamp64/www/python/WebInterface.py ".$response_id);
 
 echo $shell_resp;
 
