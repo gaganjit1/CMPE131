@@ -1,2 +1,0 @@
-# CMPE131
-CMPE 130/131 Project
